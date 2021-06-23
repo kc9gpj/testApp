@@ -25,6 +25,50 @@ import {
   LearnMoreLinks,
   ReloadInstructions,
 } from 'react-native/Libraries/NewAppScreen';
+import Amplify from 'aws-amplify';
+import PushNotification from '@aws-amplify/pushnotification';
+
+Amplify.configure({
+  // Analytics: {
+  //   autoSessionRecord: true,
+  //   AWSPinpoint: {
+  //     appId: 'f61f954951d34730ab4e1f04923d7df0',
+  //     region: 'us-east-1',
+  //     bufferSize: 1000,
+  //     flushInterval: 30000,
+  //     endpoint: {
+  //       demographic: {
+  //         appVersion: DeviceInfo.getVersion(),
+  //         model: DeviceInfo.getDeviceId(),
+  //         platform: DeviceInfo.getSystemName(),
+  //         platformVersion: DeviceInfo.getSystemVersion(),
+  //       },
+  //     },
+  //   },
+  // },
+  PushNotification: {
+    appId: 'f61f954951d34730ab4e1f04923d7df0',
+    requestIOSPermissions: false,
+  },
+});
+
+// get the notification data when notification is received
+PushNotification.onNotification((notification) => {
+  // Note that the notification object structure is different from Android and IOS
+  console.log('in app notification', notification);
+});
+
+// get the registration token
+// This will only be triggered when the token is generated or updated.
+PushNotification.onRegister((token) => {
+  console.log('in app registration', token);
+});
+
+// get the notification data when notification is opened
+PushNotification.onNotificationOpened((notification) => {
+    console.log('the notification is opened', notification);
+});
+
 
 const Section = ({children, title}): Node => {
   const isDarkMode = useColorScheme() === 'dark';

@@ -1,0 +1,82 @@
+{
+  "project_info": {
+    "project_number": "858544163744",
+    "project_id": "strange-wharf-743-development",
+    "storage_bucket": "strange-wharf-743-development.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:858544163744:android:41839121d7efd8d968b2c5",
+        "android_client_info": {
+          "package_name": "com.faithcomesbyhearing.android.bibleis"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "858544163744-gasfkae7qfbfl6r86ebe7791r50sumnq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBRLXoDaKhaVZXFARQk8gmKqHkAnn2cQCo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "858544163744-gasfkae7qfbfl6r86ebe7791r50sumnq.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "858544163744-r1tdv2ejare7kj3gmsbqvrh29m2n2kod.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.fcbh.bibleis"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:858544163744:android:5bcab942223fb36f68b2c5",
+        "android_client_info": {
+          "package_name": "com.testapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "858544163744-gasfkae7qfbfl6r86ebe7791r50sumnq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBRLXoDaKhaVZXFARQk8gmKqHkAnn2cQCo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "858544163744-gasfkae7qfbfl6r86ebe7791r50sumnq.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "858544163744-r1tdv2ejare7kj3gmsbqvrh29m2n2kod.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.fcbh.bibleis"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

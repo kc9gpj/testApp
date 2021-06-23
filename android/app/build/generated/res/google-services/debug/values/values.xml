@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="default_web_client_id" translatable="false">858544163744-gasfkae7qfbfl6r86ebe7791r50sumnq.apps.googleusercontent.com</string>
+    <string name="gcm_defaultSenderId" translatable="false">858544163744</string>
+    <string name="google_api_key" translatable="false">AIzaSyBRLXoDaKhaVZXFARQk8gmKqHkAnn2cQCo</string>
+    <string name="google_app_id" translatable="false">1:858544163744:android:5bcab942223fb36f68b2c5</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyBRLXoDaKhaVZXFARQk8gmKqHkAnn2cQCo</string>
+    <string name="google_storage_bucket" translatable="false">strange-wharf-743-development.appspot.com</string>
+    <string name="project_id" translatable="false">strange-wharf-743-development</string>
+</resources>
