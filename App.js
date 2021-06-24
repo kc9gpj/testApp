@@ -7,7 +7,7 @@
  */
 
 import React from 'react';
-import type {Node} from 'react';
+import { Node } from 'react';
 import {
   SafeAreaView,
   ScrollView,
@@ -28,52 +28,55 @@ import {
 import Amplify from 'aws-amplify';
 import PushNotification from '@aws-amplify/pushnotification';
 import { Analytics } from 'aws-amplify';
+import AWS_KEY from './aws-exports';
 
 Amplify.configure({
   Analytics: {
     autoSessionRecord: true,
     AWSPinpoint: {
-      appId: 'f61f954951d34730ab4e1f04923d7df0',
+      appId: AWS_KEY,
       region: 'us-east-1',
       bufferSize: 1000,
       flushInterval: 30000,
       endpoint: {
         demographic: {
-          appVersion: 'test'
+          appVersion: DeviceInfo.getVersion(),
+          model: DeviceInfo.getDeviceId(),
+          platform: DeviceInfo.getSystemName(),
+          platformVersion: DeviceInfo.getSystemVersion(),
         },
       },
     },
   }
 });
-  Amplify.configure({
+
+Amplify.configure({
   PushNotification: {
-    appId: 'f61f954951d34730ab4e1f04923d7df0',
+    appId: AWS_KEY,
     requestIOSPermissions: false,
   },
 });
 
-// get the notification data when notification is received
 PushNotification.onNotification((notification) => {
-  // Note that the notification object structure is different from Android and IOS
   console.log('in app notification', notification);
+
+  notification.finish(PushNotificationIOS.FetchResult.NoData);
 });
 
-// get the registration token
-// This will only be triggered when the token is generated or updated.
 PushNotification.onRegister((token) => {
   console.log('in app registration', token);
-  Analytics.updateEndpoint({
+  
+  // is this needed?
+  PushNotification.updateEndpoint({
     address: token,
     optOut: 'NONE',
-    userId: 'Z1Y2X3W4ABC12345A'
+    userId: id
     })
 });
 
-// get the notification data when notification is opened
 PushNotification.onNotificationOpened((notification) => {
     console.log('the notification is opened', notification);
 });
-
 
 const Section = ({children, title}): Node => {
   const isDarkMode = useColorScheme() === 'dark';
