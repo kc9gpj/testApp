@@ -33,7 +33,7 @@ Amplify.configure({
   Analytics: {
     autoSessionRecord: true,
     AWSPinpoint: {
-      appId: AWS_KEY,
+      appId: 'f61f954951d34730ab4e1f04923d7df0',
       region: 'us-east-1',
       bufferSize: 1000,
       flushInterval: 30000,
@@ -47,7 +47,7 @@ Amplify.configure({
 });
   Amplify.configure({
   PushNotification: {
-    appId: AWS_KEY,
+    appId: 'f61f954951d34730ab4e1f04923d7df0',
     requestIOSPermissions: false,
   },
 });
