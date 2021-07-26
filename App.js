@@ -25,36 +25,18 @@ import {
   LearnMoreLinks,
   ReloadInstructions,
 } from 'react-native/Libraries/NewAppScreen';
+import DeviceInfo from 'react-native-device-info';
 import Amplify from 'aws-amplify';
 import PushNotification from '@aws-amplify/pushnotification';
-import { Analytics } from 'aws-amplify';
-import AWS_KEY from './aws-exports';
+import { PushNotificationIOS } from '@react-native-community/push-notification-ios';
+import AWS_KEY from './keys.js';
 
 Amplify.configure({
-  Analytics: {
-    autoSessionRecord: true,
-    AWSPinpoint: {
-      appId: AWS_KEY,
-      region: 'us-east-1',
-      bufferSize: 1000,
-      flushInterval: 30000,
-      endpoint: {
-        demographic: {
-          appVersion: DeviceInfo.getVersion(),
-          model: DeviceInfo.getDeviceId(),
-          platform: DeviceInfo.getSystemName(),
-          platformVersion: DeviceInfo.getSystemVersion(),
-        },
-      },
-    },
-  }
-});
-
-Amplify.configure({
+  ...awsconfig,
   PushNotification: {
     appId: AWS_KEY,
     requestIOSPermissions: false,
-  },
+  }
 });
 
 PushNotification.onNotification((notification) => {

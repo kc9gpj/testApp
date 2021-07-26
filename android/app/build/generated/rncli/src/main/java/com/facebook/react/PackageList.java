@@ -17,6 +17,8 @@ import com.amazonaws.amplify.pushnotification.RNPushNotificationPackage;
 import com.reactnativecommunity.asyncstorage.AsyncStoragePackage;
 // @react-native-community/netinfo
 import com.reactnativecommunity.netinfo.NetInfoPackage;
+// react-native-device-info
+import com.learnium.RNDeviceInfo.RNDeviceInfo;
 // react-native-push-notification
 import com.dieam.reactnativepushnotification.ReactNativePushNotificationPackage;
 
@@ -67,6 +69,7 @@ public class PackageList {
       new RNPushNotificationPackage(),
       new AsyncStoragePackage(),
       new NetInfoPackage(),
+      new RNDeviceInfo(),
       new ReactNativePushNotificationPackage()
     ));
   }
