@@ -1,1 +1,94 @@
-<mxfile host="app.diagrams.net" modified="2021-11-03T19:23:20.827Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.69 Safari/537.36" version="15.6.8" etag="K8uA7LfJe4h1Q_4aB9Ke" type="github"><diagram id="k9Tgjp4dmYxLEBInx6mJ">UzV2zq1wL0osyPDNT0nNUTV2VTV2LsrPL4GwciucU3NyVI0MMlNUjV1UjYwMgFjVyA2HrCFY1qAgsSg1rwSLBiADYTaQg2Y1AA==</diagram></mxfile>
+<mxfile host="app.diagrams.net" modified="2021-11-03T20:14:12.856Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.69 Safari/537.36" etag="_V0lzYGj6kL93Z1Zu0Z7" version="15.6.8" type="github">
+  <diagram id="k9Tgjp4dmYxLEBInx6mJ" name="Page-1">
+    <mxGraphModel dx="1222" dy="1128" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="89d_ULkY5AayZMforbNU-1" value="Customer Selects Subscription Tier" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="60" y="230" width="180" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="89d_ULkY5AayZMforbNU-2" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="140" y="130" as="sourcePoint" />
+            <mxPoint x="140" y="210" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="89d_ULkY5AayZMforbNU-3" value="Frontend" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="130" y="10" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="89d_ULkY5AayZMforbNU-4" value="Backend" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="530" y="10" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="89d_ULkY5AayZMforbNU-5" value="- GET products and subscriptions&lt;br&gt;- GET Auth0 user details (email, etc)" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="480" y="50" width="160" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="89d_ULkY5AayZMforbNU-9" value="Start" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="100" y="45" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="89d_ULkY5AayZMforbNU-11" value="- POST stripe create customer (&lt;span style=&quot;text-align: center&quot;&gt;&lt;a href=&quot;https://stripe.com/docs/api/customers&quot;&gt;link&lt;/a&gt;)&lt;/span&gt;&lt;br&gt;- POST stripe create subscription (&lt;a href=&quot;https://stripe.com/docs/api/subscriptions/object&quot;&gt;link&lt;/a&gt;)&lt;br&gt;- POST auth0 metaData stripe customer id and subscription id" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="470" y="230" width="170" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="89d_ULkY5AayZMforbNU-18" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="139.5" y="340" as="sourcePoint" />
+            <mxPoint x="139.5" y="420" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="89d_ULkY5AayZMforbNU-19" value="Customer inputs payment information with Stripe Elements (&lt;a href=&quot;https://stripe.com/docs/payments/elements&quot;&gt;link&lt;/a&gt;)" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="60" y="450" width="180" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="89d_ULkY5AayZMforbNU-20" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="139.5" y="560" as="sourcePoint" />
+            <mxPoint x="139.5" y="640" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="89d_ULkY5AayZMforbNU-21" value="Submit, frontend processes payment, returns payment status (success/fail)" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="60" y="670" width="180" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="89d_ULkY5AayZMforbNU-24" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="139.5" y="770" as="sourcePoint" />
+            <mxPoint x="139.5" y="850" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="89d_ULkY5AayZMforbNU-25" value="User redirected&amp;nbsp;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="50" y="870" width="180" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="89d_ULkY5AayZMforbNU-28" value="&lt;div&gt;&lt;span&gt;GraphQL Queries/Mutations to Add:&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;- Get Stripe Customer (params: id)&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;- Get Subscription (params: id)&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;- Add Stripe subscription id and stripe customer id to User metaData&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;- Mutation that deletes Stripe subscription&amp;nbsp;(params: id)&lt;br&gt;- Mutation that updates Stripe subscription (params: id)&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;&lt;br&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="235" y="950" width="400" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="89d_ULkY5AayZMforbNU-30" value="- Express /webhooks, listen for payment status" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="480" y="670" width="160" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="89d_ULkY5AayZMforbNU-31" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="300" y="700" as="sourcePoint" />
+            <mxPoint x="420" y="700" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="89d_ULkY5AayZMforbNU-32" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="554.5" y="760" as="sourcePoint" />
+            <mxPoint x="554.5" y="840" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="89d_ULkY5AayZMforbNU-33" value="- Express set payment method as default" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="480" y="850" width="160" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="89d_ULkY5AayZMforbNU-35" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="300" y="264.5" as="sourcePoint" />
+            <mxPoint x="420" y="264.5" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="89d_ULkY5AayZMforbNU-36" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="415" y="84.5" as="sourcePoint" />
+            <mxPoint x="290" y="85" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
