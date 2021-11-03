@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-11-03T20:58:22.919Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.69 Safari/537.36" etag="_G6LHqsG1D-RMpOu15Qm" version="15.6.8" type="github">
+<mxfile host="app.diagrams.net" modified="2021-11-03T21:06:55.843Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.69 Safari/537.36" etag="ku_r2REAPyB65kFgTUUp" version="15.6.8" type="github">
   <diagram id="k9Tgjp4dmYxLEBInx6mJ" name="Page-1">
     <mxGraphModel dx="1222" dy="1128" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -46,14 +46,8 @@
         <mxCell id="89d_ULkY5AayZMforbNU-21" value="Submit, frontend processes payment, returns payment status (success/fail)" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="60" y="590" width="180" height="70" as="geometry" />
         </mxCell>
-        <mxCell id="89d_ULkY5AayZMforbNU-24" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
-          <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="140" y="860" as="sourcePoint" />
-            <mxPoint x="139.5" y="940" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
         <mxCell id="89d_ULkY5AayZMforbNU-25" value="User redirected&amp;nbsp;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="60" y="960" width="180" height="70" as="geometry" />
+          <mxGeometry x="60" y="800" width="180" height="70" as="geometry" />
         </mxCell>
         <mxCell id="89d_ULkY5AayZMforbNU-28" value="&lt;div&gt;&lt;span&gt;&lt;u&gt;GraphQL Queries/Mutations to Add:&lt;/u&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;- Get Stripe Customer (params: id)&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;- Get Subscription (params: id)&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;- Add Stripe subscription id and stripe customer id to User metaData&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;- Mutation that deletes Stripe subscription&amp;nbsp;(params: id)&lt;br&gt;- Mutation that updates Stripe subscription (params: id)&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;&lt;br&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="400" y="880" width="400" height="110" as="geometry" />
@@ -78,9 +72,6 @@
             <mxPoint x="415" y="84.5" as="sourcePoint" />
             <mxPoint x="290" y="85" as="targetPoint" />
           </mxGeometry>
-        </mxCell>
-        <mxCell id="89d_ULkY5AayZMforbNU-38" value="Submit, frontend processes payment, returns payment status (success/fail)" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="60" y="780" width="180" height="70" as="geometry" />
         </mxCell>
         <mxCell id="89d_ULkY5AayZMforbNU-41" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
